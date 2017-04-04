@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a5c5d37_47686ef5",
+        "filename": "rootdir/etc/init.qcom-ims.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 15791
+      },
+      "writtenOn": "2017-04-04T10:53:44Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespaces",
+      "revId": "0d17b9aa1d98f075a2cb34a5a30573462f88d85a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
