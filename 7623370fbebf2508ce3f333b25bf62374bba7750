@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a51691d_f705bc14",
+        "filename": "init/init_A6020.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 13610
+      },
+      "writtenOn": "2017-04-14T16:13:08Z",
+      "side": 1,
+      "message": "should be \"A6020a40\", that\u0027s the device name.\nAlso, does it use a40 blobs? because currently we\u0027re using a46 blobs for it. (check configs/move_files.sh)",
+      "revId": "7623370fbebf2508ce3f333b25bf62374bba7750",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
