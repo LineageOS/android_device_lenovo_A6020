@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a4e6583_742676bc",
+        "filename": "rootdir/etc/init.qcom.power.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 13610
+      },
+      "writtenOn": "2017-04-17T23:22:58Z",
+      "side": 1,
+      "message": "I think we should let all the little cores for background, it doesn\u0027t make sense to let one little core only for top apps, probably it was based on the previous msm SoCs where the big cores were after the little ones. \nWe should let a big core for the top app.\n\nHere:\n\n    # Update foreground cpuset now that processors are up\n    # reserve CPU 3 for the top app and camera daemon\n    write /dev/cpuset/foreground/cpus 0-2,4-7\n    write /dev/cpuset/foreground/boost/cpus 4-7\n    write /dev/cpuset/background/cpus 0\n    write /dev/cpuset/system-background/cpus 0-2\n    write /dev/cpuset/top-app/cpus 0-7\n    write /dev/cpuset/camera-daemon/cpus 0-3\n\nFrom: https://github.com/sonyxperiadev/device-sony-kitakami/blob/master/rootdir/init.kitakami.rc",
+      "revId": "b13bcdf271bbd48753f6dfef40956fc0b32f3b12",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
